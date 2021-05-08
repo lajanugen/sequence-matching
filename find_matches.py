@@ -10,7 +10,7 @@ def read_fasta(fname):
         break
       if line[0] == '>':
         if current_sequence:
-          sequences.append(current_sequence)
+          sequences.append(current_sequence.lower())
           headers.append(current_header)
           current_header, current_sequence = '', ''
         current_header = line
