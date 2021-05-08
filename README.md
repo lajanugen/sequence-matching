@@ -10,8 +10,12 @@ Example output
 
 `
 \>NC_049710.1 Spodoptera frugiperda isolate Faw-zju chromosome 1, ZJU_Sfru_1.0, whole genome shotgun sequence-3-28-+-ctaacc
+
 aaaccacacactaacccacccccccc
+
 \>NC_049710.1 Spodoptera frugiperda isolate Faw-zju chromosome 1, ZJU_Sfru_1.0, whole genome shotgun sequence-28-57-+-ctaacctaac
+
 ccccacctaactaacctaacacctaaccta
+
 ...
 `
