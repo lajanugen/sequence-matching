@@ -85,5 +85,11 @@ if __name__ == '__main__':
         for start_pos, end_pos in matches:
           matching_query = sequence[start_pos: end_pos]
           matching_sequence = sequence[start_pos-left: end_pos+right]
+          left_flank = sequence[start_pos-left: start_pos]
+          right_flank = sequence[end_pos: end_pos+right]
+          if left_flank.find(query_version + query_version[0]) != -1:
+            continue
+          if right_flank.find(query_version + query_version[0]) != -1:
+            continue
           f.write('%s-%d-%d-%s-%s\n' % (header, start_pos-left+1, end_pos+right, sign, matching_query))
           f.write('%s\n' % matching_sequence)
